@@ -1,3 +1,11 @@
+use std::process::Command;
+
+fn clear() {
+    Command::new("clear")
+        .spawn();
+}
+
 fn main() {
-    println!("Hello, world!")
+    clear();
+    println!("Hello, World!");
 }
